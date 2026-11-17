@@ -1,39 +1,23 @@
 import { useEffect, useState } from 'react'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import LoadingScreen from './components/LoadingScreen'
 import './App.css'
 
 const LOADING_DURATION = 3000
 
-function LoadingScreen() {
-  return (
-    <main className="loading-screen" aria-label="Loading SJM Electricals">
-      <div className="loading-mark" aria-hidden="true">
-        <span className="mark-line mark-line-one" />
-        <span className="mark-line mark-line-two" />
-      </div>
-      <div className="name-lockup">
-        <span className="name-first">jerrin</span>
-        <span className="name-second">mathew</span>
-      </div>
-      <span className="loading-caption">powering up</span>
-    </main>
-  )
-}
-
 function HomePage() {
   return (
     <main className="home-page">
-      <nav className="navbar site-navbar" aria-label="Main navigation">
-        <div className="container-fluid">
-          <span className="navbar-brand brand-placeholder" aria-hidden="true" />
-          <span className="nav-placeholder" aria-hidden="true" />
+      <Navbar />
+      <section className="home-space" aria-label="Home">
+        <div className="container-fluid dummy-content">
+          <span className="dummy-eyebrow">SJM Electricals</span>
+          <h1>Powering better spaces.</h1>
+          <p>Industrial, commercial and residential electrical solutions.</p>
         </div>
-      </nav>
-      <section className="home-space" aria-label="Home" />
-      <footer className="site-footer">
-        <div className="container-fluid">
-          <span className="footer-placeholder" aria-hidden="true" />
-        </div>
-      </footer>
+      </section>
+      <Footer />
     </main>
   )
 }
