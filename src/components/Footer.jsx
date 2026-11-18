@@ -15,7 +15,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="container-fluid footer-content">
         <div>
-          <span className="footer-eyebrow">SJM Electricals</span>
+          <h1 className="footer-eyebrow">SJM Electricals</h1>
           <p className="footer-note">Reliable power for every kind of space.</p>
         </div>
         <div className="footer-columns">
@@ -45,7 +45,7 @@ function Footer() {
       </div>
       <div className="container-fluid footer-bottom">
         <span>© 2026 SJM Electricals</span>
-        <span>Built for brighter spaces.</span>
+        <span>Built with ❤️ by hexTorq.</span>
       </div>
     </footer>
   )
